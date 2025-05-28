@@ -290,14 +290,10 @@
         english: { min: 30, max: 40, avg: 35 }
     };
 
-    // --- Question Data from mcqs.docx and keys.docx, and new PDFs ---
-    // Manually parsed and structured data from the provided files.
-    // The 'id' is constructed as SubjectPrefix + QuestionNumber (e.g., M1, P101, E161)
-    // The 'correctAnswer' is the full text of the correct option.
-
+    // --- Question Data from uploaded:lines of mcqs ---
+    // This data is now directly from the provided file.
     const rawQuestions = {
-       {
-  mathematics: [
+  "mathematics": [
     {
       "id": "M1",
       "text": "The modulus of iota is equal to:",
@@ -606,7 +602,7 @@
     },
     {
       "id": "M52",
-      "text": "What is the sum of the series \\( 8 + 4 + 2 + \\ldots + \\frac{1}{32} \\)?",
+      "text": "What is the sum of the following series? \\( 8 + 4 + 2 + \\ldots + \\frac{1}{32} \\)?",
       "options": ["495/32", "625/32", "511/32", "None of these"],
       "correctAnswer": "511/32"
     },
@@ -899,7 +895,7 @@
       "correctAnswer": "100"
     }
   ],
-  physics: [
+  "physics": [
     {
       "id": "P1",
       "text": "The vector quantity among the following is:",
@@ -1261,243 +1257,243 @@
       "correctAnswer": "Damping"
     }
   ],
-  english: [
+  "english": [
     {
-      "id": "E1",
+      "id": "E161",
       "text": "Passage: The forest was alive with the sounds of birds and rustling leaves. What is the main idea?",
       "options": ["The forest is noisy", "Birds are singing", "Leaves are falling", "The forest is empty"],
       "correctAnswer": "The forest is noisy"
     },
     {
-      "id": "E2",
+      "id": "E162",
       "text": "Big is to small as long is to:",
       "options": ["Short", "Tall", "Wide", "Deep"],
       "correctAnswer": "Short"
     },
     {
-      "id": "E3",
+      "id": "E163",
       "text": "A synonym for “brave” is:",
       "options": ["Courageous", "Afraid", "Weak", "Tired"],
       "correctAnswer": "Courageous"
     },
     {
-      "id": "E4",
+      "id": "E164",
       "text": "An antonym for “happy” is:",
       "options": ["Sad", "Joyful", "Excited", "Content"],
       "correctAnswer": "Sad"
     },
     {
-      "id": "E5",
+      "id": "E165",
       "text": "Correct the sentence: They is going to the park.",
       "options": ["They are going to the park.", "They was going to the park.", "They going to the park.", "They goes to the park."],
       "correctAnswer": "They are going to the park."
     },
     {
-      "id": "E6",
+      "id": "E166",
       "text": "Correct the spelling: Occured",
       "options": ["Occurred", "Occured", "Ocurred", "Occurrred"],
       "correctAnswer": "Occurred"
     },
     {
-      "id": "E7",
+      "id": "E167",
       "text": "Passage: Reading improves vocabulary and critical thinking. What is the main idea?",
       "options": ["Reading is beneficial", "Vocabulary is important", "Thinking is difficult", "Reading is boring"],
       "correctAnswer": "Reading is beneficial"
     },
     {
-      "id": "E8",
+      "id": "E168",
       "text": "Fast is to slow as bright is to:",
       "options": ["Dim", "Light", "Shiny", "Glow"],
       "correctAnswer": "Dim"
     },
     {
-      "id": "E9",
+      "id": "E169",
       "text": "A synonym for “difficult” is:",
       "options": ["Hard", "Easy", "Simple", "Soft"],
       "correctAnswer": "Hard"
     },
     {
-      "id": "E10",
+      "id": "E170",
       "text": "An antonym for “strong” is:",
       "options": ["Weak", "Powerful", "Sturdy", "Firm"],
       "correctAnswer": "Weak"
     },
     {
-      "id": "E11",
+      "id": "E171",
       "text": "Passage: The river flows gently through the village, providing water for crops. What is the main idea?",
       "options": ["The river supports agriculture", "The village is small", "The river is fast", "Crops are expensive"],
       "correctAnswer": "The river supports agriculture"
     },
     {
-      "id": "E12",
+      "id": "E172",
       "text": "Teacher is to student as chef is to:",
       "options": ["Cook", "Kitchen", "Food", "Recipe"],
       "correctAnswer": "Cook"
     },
     {
-      "id": "E13",
+      "id": "E173",
       "text": "A synonym for “calm” is:",
       "options": ["Peaceful", "Angry", "Noisy", "Excited"],
       "correctAnswer": "Peaceful"
     },
     {
-      "id": "E14",
+      "id": "E174",
       "text": "An antonym for “old” is:",
       "options": ["Young", "Ancient", "Aged", "Mature"],
       "correctAnswer": "Young"
     },
     {
-      "id": "E15",
+      "id": "E175",
       "text": "Correct the sentence: He don’t like to swim.",
       "options": ["He doesn’t like to swim.", "He don’t likes to swim.", "He not like to swim.", "He doesn’t likes to swim."],
       "correctAnswer": "He doesn’t like to swim."
     },
     {
-      "id": "E16",
+      "id": "E176",
       "text": "Correct the spelling: Seperate",
       "options": ["Separate", "Seperate", "Sepparate", "Seperete"],
       "correctAnswer": "Separate"
     },
     {
-      "id": "E17",
+      "id": "E177",
       "text": "Passage: Stars twinkle in the night sky, creating a beautiful scene. What is the main idea?",
       "options": ["The night sky is beautiful", "Stars are bright", "The sky is dark", "Stars are far away"],
       "correctAnswer": "The night sky is beautiful"
     },
     {
-      "id": "E18",
+      "id": "E178",
       "text": "Pen is to write as brush is to:",
       "options": ["Paint", "Draw", "Clean", "Sweep"],
       "correctAnswer": "Paint"
     },
     {
-      "id": "E19",
+      "id": "E179",
       "text": "A synonym for “big” is:",
       "options": ["Large", "Small", "Tiny", "Little"],
       "correctAnswer": "Large"
     },
     {
-      "id": "E20",
+      "id": "E180",
       "text": "An antonym for “hot” is:",
       "options": ["Cold", "Warm", "Boiling", "Heated"],
       "correctAnswer": "Cold"
     },
     {
-      "id": "E21",
+      "id": "E181",
       "text": "Correct the sentence: She go to school every day.",
       "options": ["She goes to school every day.", "She going to school every day.", "She go to school everyday.", "She goes to school everyday."],
       "correctAnswer": "She goes to school every day."
     },
     {
-      "id": "E22",
+      "id": "E182",
       "text": "Correct the spelling: Acomodation",
       "options": ["Accommodation", "Acommodation", "Accomodation", "Accommodate"],
       "correctAnswer": "Accommodation"
     },
     {
-      "id": "E23",
+      "id": "E183",
       "text": "Passage: Exercise keeps the body healthy and strong. What is the main idea?",
       "options": ["Exercise is good for health", "The body is strong", "Health is important", "Exercise is tiring"],
       "correctAnswer": "Exercise is good for health"
     },
     {
-      "id": "E24",
+      "id": "E184",
       "text": "Lock is to key as door is to:",
       "options": ["Handle", "Window", "Wall", "Floor"],
       "correctAnswer": "Handle"
     },
     {
-      "id": "E25",
+      "id": "E185",
       "text": "A synonym for “fast” is:",
       "options": ["Quick", "Slow", "Steady", "Calm"],
       "correctAnswer": "Quick"
     },
     {
-      "id": "E26",
+      "id": "E186",
       "text": "An antonym for “near” is:",
       "options": ["Far", "Close", "Next", "Beside"],
       "correctAnswer": "Far"
     },
     {
-      "id": "E27",
+      "id": "E187",
       "text": "Correct the sentence: I has two cats.",
       "options": ["I have two cats.", "I has two cat.", "I have two cat.", "I having two cats."],
       "correctAnswer": "I have two cats."
     },
     {
-      "id": "E28",
+      "id": "E188",
       "text": "Correct the spelling: Definately",
       "options": ["Definitely", "Definitly", "Definately", "Definitelly"],
       "correctAnswer": "Definitely"
     },
     {
-      "id": "E29",
+      "id": "E189",
       "text": "Passage: Music can uplift moods and inspire creativity. What is the main idea?",
       "options": ["Music is inspiring", "Moods are changeable", "Creativity is important", "Music is loud"],
       "correctAnswer": "Music is inspiring"
     },
     {
-      "id": "E30",
+      "id": "E190",
       "text": "Foot is to shoe as hand is to:",
       "options": ["Glove", "Ring", "Bracelet", "Watch"],
       "correctAnswer": "Glove"
     },
     {
-      "id": "E31",
+      "id": "E191",
       "text": "A synonym for “glad” is:",
       "options": ["Happy", "Sad", "Angry", "Tired"],
       "correctAnswer": "Happy"
     },
     {
-      "id": "E32",
+      "id": "E192",
       "text": "An antonym for “light” is:",
       "options": ["Dark", "Bright", "Shiny", "Clear"],
       "correctAnswer": "Dark"
     },
     {
-      "id": "E33",
+      "id": "E193",
       "text": "Correct the sentence: We was playing in the park.",
       "options": ["We were playing in the park.", "We was played in the park.", "We were play in the park.", "We was playing at the park."],
       "correctAnswer": "We were playing in the park."
     },
     {
-      "id": "E34",
+      "id": "E194",
       "text": "Correct the spelling: Tommorrow",
       "options": ["Tomorrow", "Tommorow", "Tommorrow", "Tomorow"],
       "correctAnswer": "Tomorrow"
     },
     {
-      "id": "E35",
+      "id": "E195",
       "text": "Passage: Trees provide shade and oxygen for the environment. What is the main idea?",
       "options": ["Trees are beneficial", "Shade is important", "Oxygen is needed", "Trees are tall"],
       "correctAnswer": "Trees are beneficial"
     },
     {
-      "id": "E36",
+      "id": "E196",
       "text": "Car is to road as boat is to:",
       "options": ["Water", "Dock", "Shore", "Sail"],
       "correctAnswer": "Water"
     },
     {
-      "id": "E37",
+      "id": "E197",
       "text": "A synonym for “small” is:",
       "options": ["Tiny", "Big", "Large", "Huge"],
       "correctAnswer": "Tiny"
     },
     {
-      "id": "E38",
+      "id": "E198",
       "text": "An antonym for “begin” is:",
       "options": ["End", "Start", "Open", "Initiate"],
       "correctAnswer": "End"
     },
     {
-      "id": "E39",
+      "id": "E199",
       "text": "Correct the sentence: The dog run fast.",
       "options": ["The dog runs fast.", "The dog run faster.", "The dog running fast.", "The dog runs faster."],
       "correctAnswer": "The dog runs fast."
     },
     {
-      "id": "E40",
+      "id": "E200",
       "text": "Correct the spelling: Neccessary",
       "options": ["Necessary", "Neccessary", "Necesary", "Necassary"],
       "correctAnswer": "Necessary"
